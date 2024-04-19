@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-12T16:19:48.193792" rpa="false" schemaversion="5">
+<suite id="s1" name="Matriz" source="C:\QAx\projects\linx-robot\matriz.robot">
+<test id="s1-t1" name="Home page deve estar online" line="7">
+<kw name="New Page" owner="Browser">
+<msg time="2024-03-12T16:19:52.681050" level="INFO">Successfully initialized new page object and opened url: https://www.linx.com.br/matriz-e-filiais/</msg>
+<msg time="2024-03-12T16:19:52.681050" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<arg>https://www.linx.com.br/matriz-e-filiais/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-03-12T16:19:48.986741" elapsed="3.694309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-12T16:19:54.681521" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-12T16:19:52.681050" elapsed="2.000471"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-03-12T16:19:54.824901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-03-12T16:19:54.681521" elapsed="0.143380"/>
+</kw>
+<status status="PASS" start="2024-03-12T16:19:48.978742" elapsed="5.846159"/>
+</test>
+<doc>Suite de Testes da home page</doc>
+<status status="PASS" start="2024-03-12T16:19:48.193792" elapsed="6.679250"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Matriz">Matriz</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

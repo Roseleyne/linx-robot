@@ -1,0 +1,82 @@
+*** Settings ***
+Documentation       Teste do site Linx
+
+Resource          ../resources/base.resource
+
+Test Setup        Start session
+Test Teardown     Finish session
+
+*** Test Cases ***
+
+Deve localizar um elemento na página
+    [Tags]       smoke
+
+    ${base_linx}        Create Dictionary                   
+    ...  name= Rosy Duarte      
+    ...  email=roseleyne.duarte@gmail.com
+
+
+    Go to signup page
+    Fill signup form      ${base_linx}
+    Sleep      10
+    Submit signup form
+    Popup should be      Recebemos o seu cadastro e em breve retornaremos o contato
+
+
+Deve poder cadastrar um novo dog walker que sabe cuidar de pets
+    [Tags]       aservice
+
+    ${base_linx}        Create Dictionary                   
+    ...  name= Rosy Duarte      
+    ...  email=roseleyne.duarte@gmail.com
+ 
+
+
+    Go to signup page
+    Fill signup form      ${base_linx}
+    Sleep      10
+    Submit signup form
+    Popup should be      Recebemos o seu cadastro e em breve retornaremos o contato
+   
+
+
+
+Não deve cadastrar se o cpf for incorreto
+    [Tags]           cpf_inv
+
+    ${base_linx}        Create Dictionary                   
+    ...  name= Rosy Duarte      
+    ...  email=roseleyne.duarte@gmail.com
+
+
+   
+    Go to signup page
+    Fill signup form      ${base_linx}
+    Sleep      10
+    Submit signup form
+    Alert should be       CPF inválido
+   
+
+
+Não deve se os campos obrigatórios não forem preenchidos
+    [Tags]     required
+
+    Go to signup page
+    Submit signup form
+    Alert should be            informe o nome completo                      
+    Alert should be            informe o seu melhor email                  
+    Alert should be            informe o seu CPF
+    Alert should be            informe o seu CEP
+    Alert should be            informe um numero maior que zero
+    Alert should be            adicione um documento com foto(RG ou CNH)
+
+
+
+
+    
+    Go to signup page
+    Fill signup form      ${base_linx}
+    Sleep      10
+    Submit signup form
+    Popup should be      Recebemos o seu cadastro e em breve retornaremos o contato    
+                          

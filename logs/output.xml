@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-13T15:02:28.905532" rpa="false" schemaversion="5">
+<suite id="s1" name="Carreira" source="C:\QAx\projects\linx-robot\carreira.robot">
+<test id="s1-t1" name="Cenário 1: Acessar a pagina home do site" line="14">
+<kw name="Page Carreira">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-03-13T15:02:29.706185" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\linx-robot\\logs\\browser\\traces\\1371be13-dca6-42e8-a5e6-a80ecac4f350"}</msg>
+<msg time="2024-03-13T15:02:30.051604" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\linx-robot\\logs\\browser\\traces\\1371be13-dca6-42e8-a5e6-a80ecac4f350"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-03-13T15:02:29.706185" elapsed="0.345419"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-03-13T15:02:35.327126" level="INFO">Successfully initialized new page object and opened url: https://www.linx.com.br/carreira-linx/</msg>
+<msg time="2024-03-13T15:02:35.327126" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.linx.com.br/carreira-linx/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-03-13T15:02:30.051604" elapsed="5.275522"/>
+</kw>
+<status status="PASS" start="2024-03-13T15:02:29.690558" elapsed="5.636568"/>
+</kw>
+<status status="PASS" start="2024-03-13T15:02:29.690558" elapsed="5.637568"/>
+</test>
+<status status="PASS" start="2024-03-13T15:02:28.905532" elapsed="6.555926"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Carreira">Carreira</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

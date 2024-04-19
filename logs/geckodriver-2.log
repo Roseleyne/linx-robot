@@ -1,0 +1,18 @@
+1710334412018	geckodriver	INFO	Listening on 127.0.0.1:56383
+1710334415042	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56384" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\rosel\\AppData\\Local\\Temp\\rust_mozprofilehv33sZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1710334415330	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1710334415437	Marionette	INFO	Listening on port 56391
+WebDriver BiDi listening on ws://127.0.0.1:56384
+Read port: 56391
+1710334415614	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56384/devtools/browser/28876aba-a612-48ee-820f-e1d693f570ec
+1710334445421	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://connect.facebook.net/en_US/fbevents.js, line 24: Script terminated by timeout at:
+value@https://connect.facebook.net/en_US/fbevents.js:24:7878
+@https://connect.facebook.net/en_US/fbevents.js:24:71940
+
+1710334978860	Marionette	INFO	Stopped listening on port 56391
+Dynamically enable window occlusion 1
